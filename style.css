@@ -87,6 +87,111 @@ img {
 /* ================== */
 /* Typography */
 /* ================== */
+.nav-link {
+  font-size: var(--fs-20);
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link--accent {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-15);
+  color: var(--clr-very-dark-desaturated-blue);
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: var(--fw-black);
+  font-family: var(--ff-secondary);
+  /* color: var(--clr-white); */
+  letter-spacing: 8.75px;
+  font-size: var(--fs-40);
+  line-height: 1.25;
+}
+
+.card__title {
+  font-weight: var(--fw-black);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-32);
+  color: var(--clr-very-dark-desaturated-blue);
+  line-height: 1.25;
+}
+
+.card__link {
+  font-weight: var(--fw-black);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-25);
+  color: var(--clr-very-dark-desaturated-blue);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.card__title-bis {
+  font-weight: var(--fw-black);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-32);
+  color: var(--clr-dark-desaturated-cyan);
+}
+
+.card__text-bis {
+  font-size: var(--fs-16);
+  color: var(--clr-dark-desaturated-cyan);
+}
+
+.card__title-bis--var,
+.card__text-bis--var {
+  color: var(--clr-dark-blue);
+}
+
+.sb__title {
+  font-weight: var(--fw-black);
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: var(--fs-16);
+  color: var(--clr-grayish-blue);
+}
+
+.sb__text {
+  font-size: var(--fs-18);
+  color: var(--clr-very-dark-grayish-blue);
+  line-height: 1.75;
+}
+
+.sb__name {
+  font-family: var(--ff-secondary);
+  color: var(--clr-very-dark-desaturated-blue);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-black);
+}
+
+.sb__position {
+  color: var(--clr-grayish-blue);
+  font-size: var(--fs-14);
+}
+
+.footer__links-area .nav-link {
+  color: var(--clr-dark-moderate-cyan);
+  font-size: var(--fs-18);
+}
+
+.footer__signature {
+  font-size: var(--fs-13);
+}
+
+/* ================== */
+/* Buttons & inputs */
+/* ================== */
+
+/* ================== */
+/* Utility styles */
+/* ================== */
+
+/* ================== */
+/* SECTIONS */
+/* ================== */
 
 /* Footer */
 .attribution {
