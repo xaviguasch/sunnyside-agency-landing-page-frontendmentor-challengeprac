@@ -58,6 +58,7 @@
   --clr-dark-desaturated-cyan: hsl(167, 40%, 24%);
   --clr-dark-blue: hsl(198, 62%, 26%);
   --clr-dark-moderate-cyan: hsl(168, 34%, 41%);
+  --clr-cyan-background: hsla(168, 44%, 70%, 1);
 
   /* Neutral */
   --clr-very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -356,6 +357,57 @@ img {
 }
 
 /* Footer */
+.footer {
+  background-color: var(--clr-cyan-background);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo-area {
+  margin-top: 3.55em;
+}
+
+.footer__logo-area svg {
+  transform: scale(1.35);
+}
+
+.footer__logo-area .logo-svg {
+  fill: var(--clr-dark-desaturated-cyan);
+}
+
+.footer__links-area {
+  margin-top: 2.22em;
+}
+
+.footer__links-area .nav-list {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.15em;
+}
+
+.footer__socials {
+  margin-top: 4.89em;
+}
+
+.footer__socials ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.55em;
+}
+
+.footer__signature {
+  margin-top: 4.44em;
+  padding-bottom: 0.5em;
+}
 
 /* /////////////// */
 /* /////////////// */
