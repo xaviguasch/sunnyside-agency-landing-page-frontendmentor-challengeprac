@@ -310,6 +310,51 @@ img {
   margin: 1.5em auto 0;
 }
 
+/* Section B */
+.sb__copy {
+  margin-top: 3.55em;
+  margin-bottom: 4.78em;
+}
+
+.sb__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sb__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 3.55em;
+}
+
+.sb__headshot img {
+  border-radius: 50%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.sb__text,
+.sb__info {
+  margin-top: 1.78em;
+}
+
+.sb__position {
+  margin-top: 0.5em;
+}
+
+/* /////////////// */
+/* /////////////// */
+/* /////////////// */
+/* /////////////// */
+/* /////////////// */
+/* /////////////// */
+/* /////////////// */
+/* /////////////// */
 /* Footer */
 .attribution {
   font-size: 11px;
