@@ -481,6 +481,25 @@ img {
 /* Tablet */
 @media (min-width: 720px) {
   /* TYPOGRAPHY */
+  .card__title {
+    font-size: var(--fs-28);
+  }
+
+  .card__text {
+    font-size: var(--fs-14);
+  }
+
+  .card__link {
+    font-size: var(--fs-16);
+  }
+
+  .card__title-bis {
+    font-size: var(--fs-20);
+  }
+
+  .card__text-bis {
+    font-size: var(--fs-14);
+  }
 
   /* UTILITY STYLES */
   .mobile-img {
@@ -491,12 +510,53 @@ img {
     display: block;
   }
 
+  .container {
+    padding: 0 1em;
+  }
+
   /* SECTIONS */
+  /* Hero */
+  .hero {
+    top: 120px;
+  }
 
   /* Section A */
   .section-a {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .card--1 {
+    order: 1;
+  }
+
+  .card--2 {
+    order: 2;
+  }
+
+  .card__copy {
+    padding: 0 1.5em;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .card__title {
+    margin-top: 1em;
+  }
+
+  .card__link {
+    margin: 1.77em auto 1em;
+  }
+
+  .card--5 .card__copy-bis,
+  .card--6 .card__copy-bis {
+    position: absolute;
+    bottom: 1em;
+  }
+
+  .card--5 .card__text-bis,
+  .card--6 .card__text-bis {
+    margin: 0.5em auto 0;
   }
 }
