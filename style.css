@@ -280,6 +280,7 @@ img {
   margin-top: 2.89em;
 }
 
+/* Section A */
 .card__copy {
   margin-top: 3.55em;
 }
@@ -346,6 +347,15 @@ img {
 .sb__position {
   margin-top: 0.5em;
 }
+
+/* Section C */
+.sc__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* Footer */
 
 /* /////////////// */
 /* /////////////// */
