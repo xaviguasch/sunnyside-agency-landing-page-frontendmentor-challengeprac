@@ -51,6 +51,7 @@
   --clr-grey-blue: hsla(221, 23%, 58%, 1);
   --clr-grey: hsla(198, 28%, 93%, 1);
   --clr-white: hsl(0, 0%, 100%);
+  --clr-white-semi-transparent: hsla(0, 0%, 100%, 0.5);
 
   /* Primary */
   --clr-soft-red: hsl(7, 99%, 70%);
@@ -287,12 +288,13 @@ img {
 .logo {
 }
 
-.open-nav {
+.toggle-nav {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
-.open-nav .svg-open {
+.toggle-nav .svg-open {
   fill: var(--clr-white);
   opacity: 0.5;
 }
@@ -301,15 +303,26 @@ img {
 .nav {
   /* display: none; */
   position: absolute;
-  top: 100px;
+  top: -400px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 85%;
+  height: 315px;
 
   background: var(--clr-whiteish-bg);
-  width: 87%;
   margin: 0 auto;
 
   padding: 0.5em 0 2em;
 
   z-index: 1;
+
+  transition: transform 300ms ease-in;
+}
+
+.navigation-open {
+  transform: translateY(500px);
 }
 
 .nav::before {
@@ -534,6 +547,10 @@ img {
     padding: 0 3.5em;
   }
 
+  .nav {
+    width: 78%;
+  }
+
   .card--5 .card__copy-bis,
   .card--6 .card__copy-bis {
     bottom: 7.25em;
@@ -545,6 +562,10 @@ img {
     padding: 0 5em;
   }
 
+  .nav {
+    width: 72%;
+  }
+
   .card--5 .card__copy-bis,
   .card--6 .card__copy-bis {
     bottom: 10em;
@@ -554,6 +575,22 @@ img {
 /* Tablet */
 @media (min-width: 720px) {
   /* TYPOGRAPHY */
+  .nav .nav-link {
+    font-size: var(--fs-18);
+    color: var(--clr-white);
+  }
+
+  .nav-link--accent {
+    background: var(--clr-white-semi-transparent);
+    padding: 0.6em 1.2em;
+    border-radius: 2em;
+  }
+
+  .nav-link--accent:hover,
+  .nav-link--accent:focus {
+    background: var(--clr-yellow-faded);
+  }
+
   .card__title {
     font-size: var(--fs-28);
   }
@@ -595,6 +632,46 @@ img {
   /* Hero */
   .hero {
     top: 120px;
+  }
+
+  /* Nav */
+  .toggle-nav {
+    display: none;
+  }
+
+  .nav {
+    /* Unset mobile nav */
+    position: unset;
+    top: unset;
+    background: unset;
+    width: unset;
+    margin: unset;
+    padding: unset;
+    z-index: unset;
+    transition: unset;
+
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+
+  .nav::before {
+    display: none;
+  }
+
+  .nav.navigation-open {
+    display: none;
+  }
+
+  .nav .nav-list {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2em;
+    padding-right: 2em;
+  }
+
+  .nav .nav-link {
+    margin-top: 0;
   }
 
   /* Section A */
