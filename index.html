@@ -18,20 +18,23 @@
           <img class="desktop-img" src="./images/desktop/image-header.jpg" alt="" />
         </div>
         <header class="header container">
-          <div class="logo">
-            <img class="logo-img" src="./images/logo.svg" alt="" />
-          </div>
-          <button class="open-nav" aria-label="Open navigation">
-            <img src="./images/icon-hamburger.svg" alt="" />
-          </button>
-
-          <nav class="nav">
+          <div class="header__row">
             <div class="logo">
               <img class="logo-img" src="./images/logo.svg" alt="" />
             </div>
-            <button class="close-nav" aria-label="Close navigation">
-              <img src="./images/icon-close.svg" alt="" />
+            <button class="open-nav" aria-label="Open navigation">
+              <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  class="svg-open"
+                  d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
+                  fill="#FFF"
+                  fill-rule="evenodd"
+                />
+              </svg>
             </button>
+          </div>
+
+          <nav class="nav">
             <ul class="nav-list">
               <li class="nav-item"><a class="nav-link" href="#">About</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
