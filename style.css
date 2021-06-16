@@ -559,10 +559,6 @@ img {
     padding: 0 3.5em;
   }
 
-  .nav {
-    width: 78%;
-  }
-
   .card--5 .card__copy-bis,
   .card--6 .card__copy-bis {
     bottom: 7.25em;
@@ -570,10 +566,6 @@ img {
 }
 
 @media (min-width: 645px) {
-  .nav {
-    width: 72%;
-  }
-
   .card--5 .card__copy-bis,
   .card--6 .card__copy-bis {
     bottom: 10em;
