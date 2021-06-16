@@ -501,6 +501,10 @@ img {
     font-size: var(--fs-14);
   }
 
+  .sb__text {
+    font-size: var(--fs-14);
+  }
+
   /* UTILITY STYLES */
   .mobile-img {
     display: none;
@@ -558,5 +562,17 @@ img {
   .card--5 .card__text-bis,
   .card--6 .card__text-bis {
     margin: 0.5em auto 0;
+  }
+
+  /* Section B */
+  .sb__item {
+    width: 50%;
+  }
+
+  /* Section C */
+  .sc__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
   }
 }
